@@ -6,8 +6,10 @@ Bitter Tea is a Unit Testing game that we created. Essentially the user inputs f
 
 We are currently working on taking this project from being a working presentation to fully functional.
 
-…
+...
 
 To view the demo:
+
 click on the file named bitter-tea-demo.mov
+
 view raw
