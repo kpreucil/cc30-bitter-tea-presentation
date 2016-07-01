@@ -8,8 +8,6 @@ We are currently working on taking this project from being a working presentatio
 
 …
 
-to make in console:
->>  npm i
->>  gulp
-
-The full project will be in the "dist" folder. Simply take the contents from that, put it on a server and it will run!
+To view the demo:
+click on the file named bitter-tea-demo.mov
+view raw
