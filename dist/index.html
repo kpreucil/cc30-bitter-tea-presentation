@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bitter Tea</title>
+
+	<!-- Bootstrap  -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Css Styles -->
+	<link href="./css/combined.css" rel="stylesheet">
+
+	<!--Include Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Kanit:400,200italic|Codystar' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<!--START Editing-->
+
+
+
+	<!--header-->
+	<div class="dkGrey">
+		<h1 class="title">bitter tea</h1>
+		<p class="centerThis subtitle">The game for Unit Testing</p>
+	</div>
+	<div class="pad-info centerThis">
+
+		<h3>How it Works</h3>
+		<p>Simply put the function to test in the box labeled function, and then create the test parameters in the Unit Test area. You can run as many tests as you like for each function. Every time that your expected output matches the actual output you gain a point, but when it doesn't match you lose one.</p>
+	</div>
+
+
+	<!--Inputs-->
+
+	<div class="container">
+		<div class="row">
+
+			<!--	Function-->
+			<div class="col-sm-12 col-md-6">
+				<h4 class="sub2 centerThis">Function</h4>
+				<br />
+				<div class="centerThis">
+					<textarea id="functionText" placeholder="Write your functions here. This is for you Halie." cols="53" rows="30"></textarea>
+				</div>
+			</div>
+
+			<!--	Unit Tests-->
+			<div id="unitTestCont" class="container col-sm-12 col-md-6">
+				<div>
+					<h4 class="sub2 centerThis">Unit Tests</h4>
+					<br />
+
+					<!--	BUTTON to add another test = className to Use: addNewTest 			-->
+					<button onclick="addNewTestElement()" class="addNewTest">Add New Test</button>
+				</div>
+				<br />
+				<div class="test pad-15 centerThis">
+					<div class="testTitle">
+						Function:
+
+						<!--    populate function name selection = className to Use: functionName		-->
+						<select class="functionName">
+							
+							<option value="string"></option>
+							<option
+							<option value="cubed">cubed</option>
+							<option value="squareRoot">squareRoot</option>
+							<option value="capitalize">capitalize</option>
+						</select> || Test 1
+					</div>
+					<br />
+					<div>
+
+						<div>
+							<label style="color:#ffc951">How many types of parameters are you using?</label>
+
+							<!--	Determine number of Parameters = className to Use: paramNumber			-->
+							<input type="number" class="paramNumber">
+						</div>
+						<div>
+							<label style="color:#ffc951">Type of Parameter: </label>
+							<!--							<br />-->
+
+							<!--	Select Type of parameter = className to Use: paramType			-->
+							<select class="paramType">
+								<option value="string">String</option>
+								<option value="integer">Integer</option>
+								<option value="float">Float</option>
+							</select>
+
+							<!--	Pull parameter Input = className to Use: 	paramInput		-->
+							<input placeholder="parameter" class="paramInput">
+						</div>
+						<br />
+
+						<!--	Pull expected outcome = className to Use: expectedOutcome		-->
+						<input placeholder="expected outcome" class="expectedOutcome">
+					</div>
+					<br />
+
+					<!--	Run Test = className to Use: runTest		-->
+					<button onclick="onTest1()" class="runTest">Run Test</button>
+
+					<!--	Delete Test = className to Use: deleteTest		-->
+					<button class="deleteTest">Delete Test</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--Score-->
+	<div class="dkGrey centerThis">
+		<h3 class="yourScore pad-top-30">Your Score: </h3>
+		<ul class="list results pad-bottom-30">
+			<li>Function Name || Test Number || Acutal Output || Score</li>
+		</ul>
+	</div>
+
+
+
+
+	<!--END Editing-->
+	<script src="./scripts/combined.js"></script>
+
+</body>
+
+</html>

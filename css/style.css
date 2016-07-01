@@ -1,0 +1,120 @@
+body {
+	font-family: 'Kanit', sans-serif;
+	font-style: normal;
+	margin: 0px;
+}
+
+html {
+margin: 0px;
+}
+
+h2, h3, h4 {
+	text-transform: uppercase;
+	color: #c5cfd3;
+	text-align: center;
+}
+
+
+.title {
+	font-family: 'Codystar', cursive;
+	color: #ffc951;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 50px;
+	font-size: 75px;
+	letter-spacing: 5px;
+}
+.subtitle {
+	color: #c5cfd3;
+	padding-bottom: 50px;
+	font-size: 25px;
+	font-style: 200italic;
+}
+
+.sub2 {
+	background-color: #c5cfd3;
+	color: #505859;
+	padding: 10px;
+}
+
+.ltGrey {
+	background-color: #c5cfd3;
+}
+
+.dkGrey {
+	background-color: #505859;
+}
+
+.ltOrange {
+	background-color: #ffc951;
+}
+
+.centerThis {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*START PADDING*/
+.pad-sides-50 {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.pad-info {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+padYourScore {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.pad-top-30 {
+	padding-top: 30px;
+}
+
+.pad-bottom-30 {
+	padding-bottom: 30px;
+}
+
+.pad-5 {
+	padding: 5px;
+}
+
+.pad-15 {
+	padding: 15px;
+}
+/*END PADDING*/
+
+/*Start Form Bits*/
+textarea {
+	border: 1px solid #505859;
+}
+
+/*
+.yourScore {
+	color: #ffc951;
+}
+*/
+
+.list {
+	color: #c5cfd3;
+}
+
+.test {
+	width: 100%;
+	border: 1px solid #ffc951;
+	margin-bottom: 10px;
+}
+
+.testTitle {
+	text-transform: uppercase;
+	color: #ffc951;
+	text-align: center;
+	font-size: 20px;
+}
+/*End Form Bits*/
